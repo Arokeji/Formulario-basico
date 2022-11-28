@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <section class="formbox">
+            <h2>Introduce tus datos para crear una cuenta</h2>
+            <i>Los valores marcados con un * son obligatorios</i>
+            <form class="formbox-inputs" action="#">
+                <label for="formname">NOMBRE*:</label>
+                <input type="text" id="formname" name="firstname" placeholder="Introduce tu nombre..." oninvalid="this.setCustomValidity('Introduzca un nombre')" oninput="this.setCustomValidity('')" required>
+                <label for="formsurname">PRIMER APELLIDO*:</label>
+                <input type="text" id="formsurname" name="surname" placeholder="Introduce tu primer apellido..." oninvalid="this.setCustomValidity('Introduzca un apellido')" oninput="this.setCustomValidity('')" required>
+                <label for="formname">SEGUNDO APELLIDO*:</label>
+                <input type="text" id="formname" name="firstname" placeholder="Introduce tu nombre...">
+                <label for="formdni">DNI*:</label>
+                <input type="text" id="formdni" name="dni" placeholder="Introduce tu DNI..." oninvalid="this.setCustomValidity('Introduzca un DNI correcto')" oninput="this.setCustomValidity('')" maxlength="9" pattern="[0-9]{8}[A-Za-z]{1}">
+                <button class="formbox-inputs-button" type="submit">REGISTRO</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
